@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+        >
+
+<h:head>
+    <title>
+        404 Rewrite Error Page
+    </title>
+</h:head>
+
+<h:body>
+    <h1>404 Rewrite Error Page</h1>
+
+    <h:panelGroup layout="block" rendered="#{not empty errorBean.page}">
+
+        <h2>
+            The page '#{errorBean.page}' was not found!
+        </h2>
+
+        <h:link outcome="index.xhtml">
+            index page
+        </h:link>
+
+        <br/>
+    </h:panelGroup>
+
+</h:body>
+</html>

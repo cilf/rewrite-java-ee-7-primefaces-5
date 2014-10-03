@@ -41,6 +41,14 @@
             <version>3.0.0.Alpha3</version>
         </dependency>
 
+        <!-- optional: CDI integration -->
+        <dependency>
+            <groupId>org.ocpsoft.rewrite</groupId>
+            <artifactId>rewrite-integration-cdi</artifactId>
+            <version>3.0.0.Alpha3</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>
