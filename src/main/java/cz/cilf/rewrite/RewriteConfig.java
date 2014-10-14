@@ -42,6 +42,9 @@ public class RewriteConfig extends HttpConfigurationProvider {
                 .perform(Forward.to("/404byRewrite.xhtml").and(Response.setStatus(404)))
                 .where("path").matches(".*")
                 .where("path").bindsTo(El.property("errorBean.page"))
+
+                .addRule(Join.path("/second-page").to("/second-page.xhtml"))
+
                 .addRule(Join.path("/").to("/index.xhtml"))
                 ;
     }

@@ -6,6 +6,6 @@ import javax.ejb.Stateless;
 public class RewriteService {
 
     public boolean isPageFound(String url) {
-        return !url.contains("second-page");
+        return !url.contains("third-page");
     }
 }
